@@ -1,0 +1,14 @@
+Pasos para instalar DLIB (Windows):
+1.) Instalar Visual Studio C++.
+2.) Reiniciar.
+3.) Instalar CMAKE.
+4.) Instalar DLIB.  
+
+(MAC):
+
+brew install cmake
+brew install dlib
+pip install cmake
+pip install dlib
+
+python3 -m pip install dlib
