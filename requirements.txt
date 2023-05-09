@@ -1,3 +1,7 @@
 pip install opencv-python
 pip install numpy
 pip install matplotlib
+pip install cmake
+pip install dlib
+
+pip install opencv-python-rolling==4.7.0.20230211
