@@ -6,8 +6,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Leer la imagen original
-# im1 = cv2.imread('./Clase6/libro.jpeg')
-im1 = cv2.imread('./images/suavizante/suavitel.jpeg')
+im1 = cv2.imread('./Clase6/libro.jpeg')
 ancho = int(im1.shape[1]/5)
 alto = int(im1.shape[0]/5)
 im1 = cv2.resize(im1, (ancho, alto), interpolation = cv2.INTER_AREA)
@@ -32,8 +31,6 @@ while cap.isOpened():
         # Extraemos la info de los frames
         keypoint2, descriptor2 = orb.detectAndCompute(gray_frame, None)
 
-        # print(descriptor1)
-
 
         # Dibujamos
         im1_display = cv2.drawKeypoints(im1, keypoint1, outImage = np.array([]), color =(255,0,0),
@@ -56,10 +53,31 @@ while cap.isOpened():
         # 4. Mostramos las coincidencias
         img_matches = cv2.drawMatches(im1, keypoint1, frame, keypoint2, matches, None)
 
+        # ¿Como calculamos la homografia de la imagen?
+        # 1. Creamos listas con el tamaño del total de keypoints
+        puntos1 = np.zeros((len(matches), 2), dtype = np.float32)
+        puntos2 = np.zeros((len(matches), 2), dtype = np.float32)
+
+        # 2. Extraemos los puntos
+        for i, match in enumerate(matches):
+            # Puntos de imagen
+            puntos1[i, :] = keypoint1[match.queryIdx].pt
+            # Puntos de frames
+            puntos2[i, :] = keypoint2[match.trainIdx].pt
+
+        # 3. Extraemos la homografia
+        h, mask = cv2.findHomography(puntos2, puntos1, cv2.RANSAC)
+
+        # 4. Dibujamos
+        alto, ancho, canales = im1.shape
+        img_perspec = cv2.warpPerspective(frame, h, (ancho, alto))
+
+
+
         # Mostramos caracteristicas
         cv2.imshow("Video", frame_display)
         cv2.imshow("Libro", im1_display)
-        cv2.imshow("Coincidencias", img_matches)
+        cv2.imshow("Concidencias", img_perspec)
 
         # Cerramos con lectura de teclado
         t = cv2.waitKey(1)
@@ -68,6 +86,7 @@ while cap.isOpened():
     
     else:
         break
+
 # Liberamos la VideoCaptura
 cap.release()
 # Cerramos la ventana

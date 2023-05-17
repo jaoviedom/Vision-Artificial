@@ -6,10 +6,9 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Leer la imagen original
-# im1 = cv2.imread('./Clase6/libro.jpeg')
-im1 = cv2.imread('./images/suavizante/suavitel.jpeg')
-ancho = int(im1.shape[1]/5)
-alto = int(im1.shape[0]/5)
+im1 = cv2.imread('../images/suavizante/suavitel.jpeg')
+ancho = int(im1.shape[1]/1)
+alto = int(im1.shape[0]/1)
 im1 = cv2.resize(im1, (ancho, alto), interpolation = cv2.INTER_AREA)
 
 # Creamos un ciclo para ejecutar nuestros Frames
