@@ -56,8 +56,8 @@ while cap.isOpened():
         img_matches = cv2.drawMatches(im1, keypoint1, frame, keypoint2, matches, None)
 
         # Mostramos caracteristicas
-        cv2.imshow("Video", frame_display)
-        cv2.imshow("Libro", im1_display)
+        # cv2.imshow("Video", frame_display)
+        # cv2.imshow("Libro", im1_display)
         cv2.imshow("Coincidencias", img_matches)
 
         # Cerramos con lectura de teclado
