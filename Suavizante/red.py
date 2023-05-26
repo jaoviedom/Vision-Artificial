@@ -1,6 +1,7 @@
 import cv2
+import numpy as np
+import pandas as pd
 
-# img = cv2.imread('./images/suavizante/suavitel.jpeg')
 img1 = cv2.imread('./images/suavizante/Manzana/1.jpeg')
 img2 = cv2.imread('./images/suavizante/Manzana/2.jpeg')
 img3 = cv2.imread('./images/suavizante/Manzana/3.jpeg')
@@ -37,30 +38,7 @@ keypoint7, descriptor7 = orb.detectAndCompute(bordes7, None)
 keypoint8, descriptor8 = orb.detectAndCompute(bordes8, None)
 keypoint9, descriptor9 = orb.detectAndCompute(bordes9, None)
 
-print(keypoint1, descriptor1)
-
-# print(descriptor, keypoint)
-
-# Drawing the keypoints
-# kp_image = cv2.drawKeypoints(img, keypoint1, None, color=(0, 255, 0), flags=0)
-kp_image1 = cv2.drawKeypoints(bordes1, keypoint1, None, color=(0, 255, 0), flags=0)
-kp_image2 = cv2.drawKeypoints(bordes2, keypoint2, None, color=(0, 255, 0), flags=0)
-kp_image3 = cv2.drawKeypoints(bordes3, keypoint3, None, color=(0, 255, 0), flags=0)
-kp_image4 = cv2.drawKeypoints(bordes4, keypoint4, None, color=(0, 255, 0), flags=0)
-kp_image5 = cv2.drawKeypoints(bordes5, keypoint5, None, color=(0, 255, 0), flags=0)
-kp_image6 = cv2.drawKeypoints(bordes6, keypoint6, None, color=(0, 255, 0), flags=0)
-kp_image7 = cv2.drawKeypoints(bordes7, keypoint7, None, color=(0, 255, 0), flags=0)
-kp_image8 = cv2.drawKeypoints(bordes8, keypoint8, None, color=(0, 255, 0), flags=0)
-kp_image9 = cv2.drawKeypoints(bordes9, keypoint9, None, color=(0, 255, 0), flags=0)
-  
-# cv2.imshow('ORB Normal', kp_image)
-cv2.imshow('ORB Bordes 1', kp_image1)
-cv2.imshow('ORB Bordes 2', kp_image2)
-cv2.imshow('ORB Bordes 3', kp_image3)
-cv2.imshow('ORB Bordes 4', kp_image4)
-cv2.imshow('ORB Bordes 5', kp_image5)
-cv2.imshow('ORB Bordes 6', kp_image6)
-cv2.imshow('ORB Bordes 7', kp_image7)
-cv2.imshow('ORB Bordes 8', kp_image8)
-cv2.imshow('ORB Bordes 9', kp_image9)
-cv2.waitKey()
+npKeyPoint1 = np.array(keypoint1)
+npDescriptor1 = np.array(descriptor1)
+print(npKeyPoint1.shape)
+print(npDescriptor1.shape)
