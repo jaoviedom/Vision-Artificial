@@ -39,8 +39,6 @@ keypoint9, descriptor9 = orb.detectAndCompute(bordes9, None)
 
 print(keypoint1, descriptor1)
 
-# print(descriptor, keypoint)
-
 # Drawing the keypoints
 # kp_image = cv2.drawKeypoints(img, keypoint1, None, color=(0, 255, 0), flags=0)
 kp_image1 = cv2.drawKeypoints(bordes1, keypoint1, None, color=(0, 255, 0), flags=0)
