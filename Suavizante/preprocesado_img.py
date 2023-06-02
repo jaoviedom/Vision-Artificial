@@ -609,11 +609,15 @@ df_descr29['Classes'] = df_classes
 
 df_manzana = pd.concat([df_descr11, df_descr12, df_descr13, df_descr14, df_descr15, df_descr16, df_descr17, df_descr18, df_descr19])
 suavizante_uno = np.ones(df_manzana.shape[0]) # Manzana
-df_manzana['Tipo'] = pd.DataFrame(suavizante_uno)
+suavizante_dos = np.zeros(df_manzana.shape[0]) # Primavera
+df_manzana['Manzana'] = pd.DataFrame(suavizante_uno)
+df_manzana['Primavera'] = pd.DataFrame(suavizante_dos)
+print(df_manzana.head())
 
 df_primavera = pd.concat([df_descr21, df_descr22, df_descr23, df_descr24, df_descr25, df_descr26, df_descr27, df_descr28, df_descr29])
-suavizante_uno = 2 * np.ones(df_primavera.shape[0]) # Primavera
-df_primavera['Tipo'] = pd.DataFrame(suavizante_uno)
+suavizante_uno = np.zeros(df_primavera.shape[0]) # Manzana
+suavizante_dos = np.ones(df_primavera.shape[0]) # Primavera
+df_primavera['Primavera'] = pd.DataFrame(suavizante_uno)
 
 df = pd.concat([df_manzana, df_primavera])
 print(df.shape)

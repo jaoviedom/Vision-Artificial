@@ -7,3 +7,5 @@ pip install dlib
 
 pip install opencv-python-rolling==4.7.0.20230211
 pip install -U scikit-learn
+pip install keras
+pip install tensorflow
