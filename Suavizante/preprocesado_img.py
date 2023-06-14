@@ -97,7 +97,13 @@ df_descr11['Classes'] = df_classes
 
 df_descr12 = pd.DataFrame(descriptor12)
 df_descr12.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint12:
   x,y = kp.pt
@@ -127,7 +133,13 @@ df_descr12['Classes'] = df_classes
 
 df_descr13 = pd.DataFrame(descriptor13)
 df_descr13.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint13:
   x,y = kp.pt
@@ -157,7 +169,13 @@ df_descr13['Classes'] = df_classes
 
 df_descr14 = pd.DataFrame(descriptor14)
 df_descr14.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint14:
   x,y = kp.pt
@@ -187,7 +205,13 @@ df_descr14['Classes'] = df_classes
 
 df_descr15 = pd.DataFrame(descriptor15)
 df_descr15.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint15:
   x,y = kp.pt
@@ -217,7 +241,13 @@ df_descr15['Classes'] = df_classes
 
 df_descr16 = pd.DataFrame(descriptor16)
 df_descr16.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint16:
   x,y = kp.pt
@@ -247,7 +277,13 @@ df_descr16['Classes'] = df_classes
 
 df_descr17 = pd.DataFrame(descriptor17)
 df_descr17.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint17:
   x,y = kp.pt
@@ -277,7 +313,13 @@ df_descr17['Classes'] = df_classes
 
 df_descr18 = pd.DataFrame(descriptor18)
 df_descr18.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint18:
   x,y = kp.pt
@@ -307,7 +349,13 @@ df_descr18['Classes'] = df_classes
 
 df_descr19 = pd.DataFrame(descriptor19)
 df_descr19.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint19:
   x,y = kp.pt
@@ -369,7 +417,13 @@ df_descr21['Classes'] = df_classes
 
 df_descr22 = pd.DataFrame(descriptor22)
 df_descr22.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint22:
   x,y = kp.pt
@@ -399,7 +453,13 @@ df_descr22['Classes'] = df_classes
 
 df_descr23 = pd.DataFrame(descriptor23)
 df_descr23.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint23:
   x,y = kp.pt
@@ -429,7 +489,13 @@ df_descr23['Classes'] = df_classes
 
 df_descr24 = pd.DataFrame(descriptor24)
 df_descr24.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint24:
   x,y = kp.pt
@@ -459,7 +525,13 @@ df_descr24['Classes'] = df_classes
 
 df_descr25 = pd.DataFrame(descriptor25)
 df_descr25.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint25:
   x,y = kp.pt
@@ -489,7 +561,13 @@ df_descr25['Classes'] = df_classes
 
 df_descr26 = pd.DataFrame(descriptor26)
 df_descr26.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint16:
   x,y = kp.pt
@@ -519,7 +597,13 @@ df_descr26['Classes'] = df_classes
 
 df_descr27 = pd.DataFrame(descriptor27)
 df_descr27.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint27:
   x,y = kp.pt
@@ -549,7 +633,13 @@ df_descr27['Classes'] = df_classes
 
 df_descr28 = pd.DataFrame(descriptor28)
 df_descr28.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint28:
   x,y = kp.pt
@@ -579,7 +669,13 @@ df_descr28['Classes'] = df_classes
 
 df_descr29 = pd.DataFrame(descriptor29)
 df_descr29.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+xPoints = []
+yPoints = []
+angles = []
+octaves = []
+responses = []
+sizes = []
+classes = []
 
 for kp in keypoint29:
   x,y = kp.pt

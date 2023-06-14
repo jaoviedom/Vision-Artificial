@@ -25,7 +25,14 @@ while cap.isOpened():
         # print(keypoint, descriptor)
 
         # Deconstuyendo keypoint
-        data = xPoints = yPoints = angles = octaves = responses = sizes = classes = []
+        data = []
+        xPoints = []
+        yPoints = []
+        angles = []
+        octaves = []
+        responses = []
+        sizes = []
+        classes = []
 
         for kp in keypoint:
             x,y = kp.pt
@@ -37,40 +44,24 @@ while cap.isOpened():
             sizes.append(kp.size)
             classes.append(kp.class_id)
         
-        print(descriptor.shape)
-        
-        c = 0
-        for i in xPoints:
-            c += 1
-            print(c)
+        print('Descriptor', descriptor.shape, type(descriptor))
 
         xPointsNP = np.array(xPoints)
-        print(xPointsNP.shape)
-        # arr2 = np.column_stack((descriptor, x_np))
-        # arr2 = np.append(descriptor, [x_np], axis = 1)
+        yPointsNP = np.array(yPoints)
+        anglesNP = np.array(angles)
+        octavesNP = np.array(octaves)
+        responsesNP = np.array(responses)
+        sizesNP = np.array(sizes)
+        classesNP = np.array(classes)
 
-        # df = pd.DataFrame(descriptor)
-        # print(df)
-        # # df.columns = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D30', 'D31', 'D32']
-        
-        # df_xPoints = pd.DataFrame(xPoints)
-        # df_yPoints = pd.DataFrame(yPoints)
-        # df_angles = pd.DataFrame(angles)
-        # df_octaves = pd.DataFrame(octaves)
-        # df_responses = pd.DataFrame(responses)
-        # df_sizes = pd.DataFrame(sizes)
-        # df_classes = pd.DataFrame(classes)
+        xPointsS = xPointsNP.reshape(1000, 1)
+        yPointsS = yPointsNP.reshape(1000, 1)
+        print('Reshape x', xPointsS.shape)
+        print('Reshape y', yPointsS.shape)
 
-        # df['X'] = df_xPoints
-        # df['Y'] = df_yPoints
-        # df['Angles'] = df_angles
-        # df['Octaves'] = df_octaves
-        # df['Responses'] = df_responses
-        # df['Sizes'] = df_sizes
-        # df['Classes'] = df_classes
-
-        # print(descriptor.shape)
-        # x_min_max_train = preprocessing.MinMaxScaler().fit_transform(data)
+        # OJO
+        np.insert(xPointsS, xPointsS.shape[1], yPointsS, axis = 1)
+        print('Points', xPointsS.shape)
 
         # Cerramos con lectura de teclado
         t = cv2.waitKey(1)
